@@ -216,7 +216,6 @@ header .intro-text {
 #about img {
 	display: inline-block;
 	border-radius: 100px 0 100px 0;
-	box-shadow: -15px 0 rgb(67, 75, 60);
 }
 #about p {
 	line-height: 24px;
@@ -352,7 +351,7 @@ ol.type li a:hover {
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(167, 196, 76, 0.9);
+	background: rgba(67, 75, 60, 0.9);
 }
 #team h2, #team p {
 	color: #fff;
