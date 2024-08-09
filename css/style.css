@@ -166,7 +166,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/bgi1.jpg) no-repeat center bottom;
+	background: url(../img/bgi3.jpg) no-repeat center bottom;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -346,12 +346,12 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	color: #fff;
-	background: #a7c44c url(../img/team-bg.jpg) center top no-repeat;
+	/* background: #a7c44c url(../img/team-bg.jpg) center top no-repeat; */
 	background-size: cover;
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(67, 75, 60, 0.9);
+	background: rgb(67, 75, 60);
 }
 #team h2, #team p {
 	color: #fff;
