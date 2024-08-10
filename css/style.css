@@ -227,6 +227,7 @@ header .intro-text {
 } */
 #services h2, #services h3, #services p {
 	color: #fff;
+	padding-bottom: 7px;
 }
 #services hr {
 	background-color: #fff;
@@ -240,13 +241,11 @@ header .intro-text {
 }
 #services img {
 	width: 300px;
+    
 	border-radius: 75px 0 75px 0;
 	box-shadow: 15px 0 rgb(67, 75, 60);
 }
-#services h3 {
-	padding: 10px 0;
-	text-transform: uppercase;
-}
+
 /* Portfolio Section */
 
 /* /new added */
