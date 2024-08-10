@@ -222,8 +222,18 @@ header .intro-text {
 	margin: 15px 0 30px;
 }
 /* Services Section */
-#services {
+/* #services {
 	padding: 120px 0;
+} */
+#services h2, #services h3, #services p {
+	color: #fff;
+}
+#services hr {
+	background-color: #fff;
+}
+#services .overlay{
+	padding: 120px 0;
+	background: rgb(67, 75, 60);
 }
 #services .service {
 	padding-left: 40px;
