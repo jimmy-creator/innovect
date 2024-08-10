@@ -242,10 +242,11 @@ header .intro-text {
 	padding: 120px 0;
 	background: #f6f6f6;
 }
-.categories {
+.egories {
 	padding-bottom: 40px;
 	text-align: center;
-}
+	
+}cat
 ul.cat li {
 	display: inline-block;
 }
