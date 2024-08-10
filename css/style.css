@@ -2,7 +2,7 @@ body, html {
 	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #777;
+	color: rgb(0, 0, 0);
 	font-weight: 300;
 	width: 100% !important;
 	height: 100% !important;
@@ -11,19 +11,19 @@ h2 {
 	margin: 0 0 20px 0;
 	font-weight: 500;
 	font-size: 34px;
-	color: #333;
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 }
 h3 {
 	font-size: 22px;
 	font-weight: 500;
-	color: #333;
+	color: rgb(255, 255, 255);
 }
 h4 {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 400;
-	color: #333;
+	color: rgb(255, 255, 255);
 }
 h5 {
 	text-transform: uppercase;
@@ -120,7 +120,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #eee;
 }
 .on {
-	background-color: #363636 !important;
+	background-color: rgba(0, 0, 0, 0.7) !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
@@ -166,15 +166,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/bgi3.jpg) no-repeat center bottom;
-	background-color: #e5e5e5;
+	background-image: url(../img/bgilatest.jpg);
+	color: rgba(0, 0, 0, 0.9);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.40);
+	background: rgba(0,0,0,0.60);
 }
 .intro h1 {
 	color: #fff;
@@ -203,7 +203,10 @@ header .intro-text {
 /* About Section */
 #about {
 	padding: 120px 0;
-	background: #f6f6f6;
+	background: rgb(0, 0, 0);
+}
+#about hr{
+	background-color: white;
 }
 #about h3 {
 	font-size: 20px;
@@ -220,6 +223,7 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin: 15px 0 30px;
+	color: white;
 }
 /* Services Section */
 /* #services {
@@ -233,7 +237,7 @@ header .intro-text {
 }
 #services .overl{
 	padding: 120px 0;
-	background: rgb(67, 75, 60);
+	background: rgb(0, 0, 0);
 }
 #services .service {
 	padding-left: 40px;
@@ -241,14 +245,19 @@ header .intro-text {
 #services img {
 	width: 300px;
 	border-radius: 75px 0 75px 0;
-	box-shadow: 15px 0 rgb(67, 75, 60);
+	box-shadow: 15px 0 rgb(255, 255, 255);
 }
 #services h3 {
 	padding: 10px 0;
 	text-transform: uppercase;
 }
 /* Portfolio Section */
-
+#portfolio p {
+	color: white;
+}
+#portfolio hr{
+	background-color: white;
+}
 /* /new added */
 .categories {
     display: flex;
@@ -346,7 +355,7 @@ header .intro-text {
 /* /new added */
 #portfolio {
 	padding: 120px 0;
-	background: #f6f6f6;
+	background: rgb(0, 0, 0);
 }
 .categories {
 	padding-bottom: 40px;
@@ -458,7 +467,7 @@ ol.type li a:hover {
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgb(67, 75, 60);
+	background: rgb(0, 0, 0);
 }
 #team h2, #team p {
 	color: #fff;
@@ -491,7 +500,13 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
-	background: #F6F6F6;
+	background: rgb(0, 0, 0);
+}
+#contact hr{
+	background-color: white;
+}
+#contact p {
+	color: white;
 }
 #contact form {
 	padding: 30px 0;
@@ -500,7 +515,7 @@ ol.type li a:hover {
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 400;
-	color: #555;
+	color: rgb(255, 255, 255);
 }
 #contact .text-danger {
 	color: #cc0033;
@@ -518,7 +533,7 @@ label {
 	padding: 6px 12px;
 	font-size: 16px;
 	line-height: 1.42857143;
-	color: #444;
+	color: rgb(255, 255, 255);
 	background-color: #fff;
 	background-image: none;
 	border: 1px solid #ddd;
@@ -530,29 +545,29 @@ label {
 	transition: none;
 }
 #contact .form-control:focus {
-	border-color: #999;
+	border-color: rgb(255, 255, 255);
 	outline: 0;
 	-webkit-box-shadow: transparent;
 	box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-color: #777;
+color: rgb(255, 255, 255);
 }
 .form-control:-moz-placeholder {
-color: #777;
+color: #ffffff;
 }
 .form-control::-moz-placeholder {
-color: #777;
+color: #ffffff;
 }
 .form-control:-ms-input-placeholder {
-color: #777;
+color: #ffffff;
 }
 #contact .contact-item {
 	margin: 20px 0 40px 0;
 }
 #contact .contact-item span {
 	font-weight: 400;
-	color: #aaa;
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	margin-bottom: 6px;
 	display: inline-block;
@@ -560,9 +575,12 @@ color: #777;
 #contact .contact-item p {
 	font-size: 16px;
 }
+#contact p a {
+	color: white;
+}
 /* Footer Section*/
 #footer {
-	background: #333;
+	background: rgb(0, 0, 0);
 	padding: 50px 0 20px 0;
 }
 #footer .social {
