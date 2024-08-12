@@ -202,7 +202,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 120px 0;
+	padding: 20px 0;
 	background: rgb(0, 0, 0);
 }
 #about hr{
@@ -237,7 +237,7 @@ header .intro-text {
 	background-color: #fff;
 }
 #services .overl{
-	padding: 120px 0;
+	padding: 20px 0;
 	background: rgb(0, 0, 0);
 }
 #services .service {
@@ -353,7 +353,7 @@ header .intro-text {
 
 /* /new added */
 #portfolio {
-	padding: 120px 0;
+	padding: 20px 0;
 	background: rgb(0, 0, 0);
 }
 .categories {
@@ -458,14 +458,14 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-/* Team Section */
+/* Team Section */ 
 #team {
 	color: #fff;
 	/* background: #a7c44c url(../img/team-bg.jpg) center top no-repeat; */
 	background-size: cover;
 }
 #team .overlay {
-	padding: 120px 0;
+	padding: 20px 0;
 	background: rgb(0, 0, 0);
 }
 #team h2, #team p {
@@ -481,9 +481,9 @@ ol.type li a:hover {
 	margin: 5px 0;
 }
 #team .team-img {
-	width: 200px;
-	height: 200px;
-	border-radius: 50px 0 50px 0;
+	width: 50px;
+	height: 50px;
+	
 	/* box-shadow: 15px 0 #96b044; */
 }
 #team .thumbnail {
@@ -498,7 +498,7 @@ ol.type li a:hover {
 }
 /* Contact Section */
 #contact {
-	padding: 120px 0 60px 0;
+	padding: 20px 0 60px 0;
 	background: rgb(0, 0, 0);
 }
 #contact hr{
@@ -583,7 +583,7 @@ color: #ffffff;
 	padding: 50px 0 20px 0;
 }
 #footer .social {
-	margin-bottom: 50px;
+	margin-bottom: 5px;
 }
 #footer .social ul li {
 	display: inline-block;
@@ -607,3 +607,44 @@ color: #ffffff;
 #footer a:hover {
 	color: #a7c44c;
 }
+.stats-container {
+    display: flex;
+    flex-direction: column; /* Default to vertical for mobile */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.stat-card {
+    background-color: rgb(39, 36, 36);
+    padding: 20px;
+    margin: 10px 0; /* Vertical margin for mobile */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.stat-card p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Media Query for Tablet and PC screens */
+@media (min-width: 768px) {
+    .stats-container {
+        flex-direction: row; /* Make the cards horizontal on larger screens */
+        justify-content: space-between;
+    }
+    
+    .stat-card {
+        margin: 10px; /* Adjust margin for spacing between horizontal cards */
+        width: 30%; /* Make each card take up about a third of the container */
+    }
+}
+
