@@ -496,6 +496,99 @@ ol.type li a:hover {
 #team .thumbnail .caption p {
 	color: #fff;
 }
+.stats-container {
+    display: flex;
+    flex-direction: column; /* Default to vertical for mobile */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+	padding: 30px;
+}
+
+.stat-card {
+    background-color: rgb(39, 36, 36);
+    padding: 20px;
+    margin: 10px 0; /* Vertical margin for mobile */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.stat-card p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Media Query for Tablet and PC screens */
+@media (min-width: 768px) {
+    .stats-container {
+        flex-direction: row; /* Make the cards horizontal on larger screens */
+        justify-content: space-between;
+    }
+    
+    .stat-card {
+        margin: 10px; /* Adjust margin for spacing between horizontal cards */
+        width: 30%; /* Make each card take up about a third of the container */
+    }
+}
+.client-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+	padding-top: 30px;
+}
+
+.carousel-wrapper {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 150px;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
 /* Contact Section */
 #contact {
 	padding: 20px 0 60px 0;
@@ -606,45 +699,5 @@ color: #ffffff;
 }
 #footer a:hover {
 	color: #a7c44c;
-}
-.stats-container {
-    display: flex;
-    flex-direction: column; /* Default to vertical for mobile */
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.stat-card {
-    background-color: rgb(39, 36, 36);
-    padding: 20px;
-    margin: 10px 0; /* Vertical margin for mobile */
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 100%;
-}
-
-.stat-card h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.stat-card p {
-    font-size: 1.2rem;
-    color: #777;
-}
-
-/* Media Query for Tablet and PC screens */
-@media (min-width: 768px) {
-    .stats-container {
-        flex-direction: row; /* Make the cards horizontal on larger screens */
-        justify-content: space-between;
-    }
-    
-    .stat-card {
-        margin: 10px; /* Adjust margin for spacing between horizontal cards */
-        width: 30%; /* Make each card take up about a third of the container */
-    }
 }
 
