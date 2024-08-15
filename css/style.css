@@ -563,11 +563,23 @@ ol.type li a:hover {
 }
 
 .carousel-item img {
-    width: 100px;
+    width: 130px;
     height: auto;
     object-fit: contain;
 }
 
+.carousel-item img big {
+	width: 160px;
+	height: auto;
+	object-fit: contain;
+
+}
+
+.carousel-item img large {
+	width: 180px;
+	height: auto;
+	object-fit: contain;
+}
 
 .carousel-control-prev,
 .carousel-control-next {

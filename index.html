@@ -290,7 +290,7 @@
           </div>
         </div>
       
-        <div class="client-carousel">
+        <!-- <div class="client-carousel">
           <button class="carousel-control-prev" onclick="moveCarousel(-1)">&#10094;</button>
           <div class="carousel-wrapper">
               <div class="carousel">
@@ -393,7 +393,76 @@
               </div>
           </div>
           <button class="carousel-control-next" onclick="moveCarousel(1)">&#10095;</button>
-        </div>
+        </div> -->
+
+        <style>
+          .client-carousel {
+              overflow: hidden;
+              position: relative;
+              width: 100%;
+          }
+          
+          .carousel-wrapper {
+              display: flex;
+              align-items: center;
+              width: 100%;
+          }
+          
+          .carousel {
+              display: flex;
+              width: max-content;
+              animation: scroll 20s linear infinite;
+          }
+          
+          .carousel-item {
+              flex-shrink: 0;
+              width: 200px; /* Adjust this value based on your image size */
+              margin-right: 20px; /* Space between items */
+          }
+
+          @keyframes scroll {
+              0% {
+                  transform: translateX(0);
+              }
+              100% {
+                  transform: translateX(-50%);
+              }
+          }
+          </style>
+          
+          <div class="client-carousel">
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <!-- Original Items -->
+                      <div class="carousel-item"><img src="img/papa.png" alt="Papa John's"></div>
+                      <div class="carousel-item"><img src="img/trojan.png" alt="Trojan Construction"></div>
+                      <div class="carousel-item"><img src="img/sobha-group-seeklogo.svg" alt="Sobha Realty"></div>
+                      <div class="carousel-item"><img src="img/engineering.png" alt="Engineers Office"></div>
+                      <div class="carousel-item img big"><img src="img/Kabana Restaurant.png" alt="Kabana"></div>
+                      <div class="carousel-item"><img src="img/stringbrand.png" alt="String Ads"></div>
+                      <div class="carousel-item img big"><img src="img/bkgulf.png" alt="BK Gulf"></div>
+                      <div class="carousel-item"><img src="img/kadris.png" alt="Kadris"></div>
+                      <div class="carousel-item img large"><img src="img/hamptons-new.jpg" alt="Hamptons"></div>
+                      <div class="carousel-item"><img src="img/dewa.png" alt="DEWA"></div>
+                      <div class="carousel-item"><img src="img/ikea.png" alt="IKEA"></div>
+                      <div class="carousel-item"><img src="img/alguhair.png" alt="Alguhair"></div>
+                      <!-- Duplicated Items -->
+                      <div class="carousel-item"><img src="img/papa.png" alt="Papa John's"></div>
+                      <div class="carousel-item"><img src="img/trojan.png" alt="Trojan Construction"></div>
+                      <div class="carousel-item"><img src="img/sobha-group-seeklogo.svg" alt="Sobha Realty"></div>
+                      <div class="carousel-item"><img src="img/engineering.png" alt="Engineers Office"></div>
+                      <div class="carousel-item"><img src="img/Kabana Restaurant.png" alt="Kabana"></div>
+                      <div class="carousel-item"><img src="img/stringbrand.png" alt="String Ads"></div>
+                      <div class="carousel-item"><img src="img/bkgulf.png" alt="BK Gulf"></div>
+                      <div class="carousel-item"><img src="img/kadris.png" alt="Kadris"></div>
+                      <div class="carousel-item"><img src="img/Hamptons.png" alt="Hamptons"></div>
+                      <div class="carousel-item"><img src="img/dewa.png" alt="DEWA"></div>
+                      <div class="carousel-item"><img src="img/ikea.png" alt="IKEA"></div>
+                      <div class="carousel-item"><img src="img/alguhair.png" alt="Alguhair"></div>
+                  </div>
+              </div>
+          </div>
+
       </div>  
     </div>
   </div>
